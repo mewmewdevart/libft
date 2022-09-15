@@ -14,7 +14,7 @@
 # define LIBFT_H
 
 # include <unistd.h> // write
-# include <stdlib.h> // malloc(), free() and maybe size_t
+# include <stdlib.h> // malloc(), free() and size_t
 
 /* -------◊	MANIPULATE CHARACTERS	◊------- */
 int	ft_isalnum(int c);
@@ -30,7 +30,12 @@ size_t	ft_strlen(const char *s);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 /* -------◊	FUNCTIONS FOR NUMBERS	◊------- */
-/* -------◊	WRITE SOMETHING	IN TERMINAL ◊------- */
+
+/* -------◊	    FILE DESCRIPTOR     ◊------- */
+
 /* -------◊	MANIPULATE MEMORY	◊------- */
+
+/* -------◊	MAYBE BÔNUS	◊------- */
+
 /* -------◊	TO BE CONTINUE	◊------- */
 #endif
