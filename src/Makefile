@@ -6,7 +6,7 @@
 #    By: larcrist <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/14 16:58:09 by larcrist          #+#    #+#              #
-#    Updated: 2022/09/14 17:26:13 by larcrist         ###   ########.fr        #
+#    Updated: 2022/09/19 17:26:13 by larcrist         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,26 +16,30 @@ CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 REMOVE = rm -rf
 
+# my functions
 SOURCE = ft_isalnum \
-	ft_isalpha \
-	ft_isascii \
-	ft_isdigit \
-	ft_isprint \
-	ft_tolower \
-	ft_toupper \
-	ft_strlen \
-	ft_strncmp
+ ft_isalpha \
+ ft_isascii \
+ ft_isdigit \
+ ft_isprint \
+ ft_tolower \
+ ft_toupper \
+ ft_strlen \
+ ft_strncmp \
+ ft_strlcpy \
 
+# .c and .o files
 SOURCES = $(addsuffix .c, $(SOURCE))
 OBJECTS = $(addsuffix .o, $(SOURCE))
 
-.c.o: $(SOURCES)
-	$(CC) $(CFLAGS) -c -o $@ $<
-
+# compilation and linking
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
 	$(AR) $(NAME) $@ $^
+
+.c.o: $(SOURCES)
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
 	$(REMOVE) *.o
@@ -43,6 +47,6 @@ clean:
 fclean: clean
 	$(REMOVE) $(NAME)
 
-re: clean all
+re: fclean all
 
-#dont forget of phony rule
+.PHONY: all clean fclean re
