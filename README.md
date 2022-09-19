@@ -40,6 +40,12 @@ To use the library functions in your code, simply include its header:
 #include "libft.h"
 ```
 
+And don't forget in to use the command ↓ to "connect" your main.c with the generated static library (with functions) :
+
+```shell
+$ gcc main.c -o main libft.a
+```
+
 ## 📋 Inspo
 
 * [Acelera/Rodsmade](https://github.com/rodsmade/Projets_42_SP/)
