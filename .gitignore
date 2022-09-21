@@ -1,11 +1,12 @@
-# .∧＿∧
-# ( ･ω･｡)つ━ ☆・*。
-# ⊂　 ノ 　　　・゜Larcrist+.
-# しーＪ
+#    |\__/,|   (`\
+#  _.|o o  |_   ) )
+#-(((---(((--------     Larcrist
 
 #Dont go, pls
 tests/a.out
 src/a.out
+src/main.c
+src/main
 
 #VSCODE extensions
 .vscode/
