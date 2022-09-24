@@ -14,13 +14,17 @@
 
 ## 💡 About the project
 
-> _Building my own basic C static library, which will be used throughout the rest of the program (42 Cursus). The ```ft_*``` functions mostly mimic the behaviour of the traditional C functions, and must be written using at most ```write()``` and ```malloc()```.
+> _Building my own basic C static library, which will be used throughout the rest of the program (42 Cursus). The ```ft_*``` functions mostly mimic the behaviour of the traditional C functions, and must be written using at most ```write()``` and ```malloc()```. 
+
+<p align="center">
+	<a href="src/README.md">See more about this project! 🚀🌎</a> 
+</p>
 
 ## 🛠️ Usage
 
 ### Requirements
 
-The function is written in C language and thus needs the **`gcc` compiler** and some standard **C libraries** to run.
+The function is written in C language and thus needs the `make` and **`gcc` compiler** and some standard **C libraries** to run.
 
 ### Instructions
 
@@ -46,6 +50,10 @@ And don't forget in to use the command ↓ to "connect" your main.c with the gen
 $ gcc main.c -o main libft.a
 ```
 
-## 📋 Inspo
+## 📋 Credits
 
 * [Acelera/Rodsmade](https://github.com/rodsmade/Projets_42_SP/)
+* Tests/
+* Tests/
+
+<p align="center"> Developed with love 💜 by Larissa Cristina Benedito (Mewmew/Larcrist). </p>
