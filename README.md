@@ -53,6 +53,7 @@ $ gcc main.c -o main libft.a
 ## 📋 Credits
 
 * [Acelera/Rodsmade](https://github.com/rodsmade/Projets_42_SP/)
+* [libftTester/Tripouille](https://github.com/Tripouille/libftTester)
 * Tests/
 * Tests/
 
