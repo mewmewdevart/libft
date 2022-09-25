@@ -1,5 +1,4 @@
 #include "libft.h"
-#include <stdio.h>
 
 static int ft_isspace(const char c)
 {
@@ -30,9 +29,4 @@ int ft_atoi(const char *nptr)
         index++;
     }
     return (symbol * result);
-}
-
-int main(void)
-{
-    printf("%d", ft_atoi("24"));
 }
