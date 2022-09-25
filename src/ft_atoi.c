@@ -1,4 +1,5 @@
 #include "libft.h"
+#include <stdio.h>
 
 static int ft_isspace(const char c)
 {
@@ -23,10 +24,15 @@ int ft_atoi(const char *nptr)
             symbol = symbol * -1;
         index++;
     }
-    while(nptr[index] >= '0' && nptr[index] <= '9')
+    while(ft_isdigit(nptr[index]))
     {
         result = (result * 10) + (nptr[index] - 48);
         index++;
     }
     return (symbol * result);
+}
+
+int main(void)
+{
+    printf("%d", ft_atoi("24"));
 }
