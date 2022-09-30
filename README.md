@@ -24,7 +24,8 @@
 
 ### Requirements
 
-The function is written in C language and thus needs the **`make`** and **`gcc` compiler** and some standard **C libraries** to run.
+The function is written in C language and thus needs the **`make`** and **`gcc` compiler** and some standard **C libraries** to run. <br>
+❗️| Make sure you have all the required tools installed on your local machine then continue with these steps.
 
 ### Instructions
 
