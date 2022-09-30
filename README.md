@@ -24,13 +24,25 @@
 
 ### Requirements
 
-The function is written in C language and thus needs the `make` and **`gcc` compiler** and some standard **C libraries** to run.
+The function is written in C language and thus needs the **`make`** and **`gcc` compiler** and some standard **C libraries** to run.
 
 ### Instructions
 
+**0. Download the archives**
+
+Download the archives and go to the library directory:
+
+```bash
+# Clone the repository
+$ git clone https://github.com/mewmewdevart/libft
+
+# Enter into the directory
+$ cd libft/src/
+```
+
 **1. Compiling the library**
 
-To compile, download the archives, go to the library path and run the command in your terminal :
+Run the command in your terminal :
 
 ```shell
 $ make
