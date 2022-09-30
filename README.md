@@ -54,7 +54,6 @@ $ gcc main.c -o main libft.a
 
 * [Acelera/Rodsmade](https://github.com/rodsmade/Projets_42_SP/)
 * [libftTester/Tripouille](https://github.com/Tripouille/libftTester)
-* Tests/
-* Tests/
+* [libft-war-machine/y3ll0w42](https://github.com/y3ll0w42/libft-war-machine)
 
 <p align="center"> Developed with love 💜 by Larissa Cristina Benedito (Mewmew/Larcrist). </p>
