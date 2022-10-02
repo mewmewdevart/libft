@@ -27,6 +27,12 @@ SOURCE = ft_isalnum \
  ft_strlen \
  ft_strncmp \
  ft_strlcpy \
+ ft_atoi \
+ ft_strlcat \
+ ft_strchr \
+ ft_strnstr \
+ ft_memcmp \
+ ft_bzero \
 
 # .c and .o files
 SOURCES = $(addsuffix .c, $(SOURCE))
