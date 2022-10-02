@@ -40,7 +40,7 @@ int	ft_atoi(const char *nptr)
 	{
 		if (nptr[index] == '-')
 			symbol = symbol * -1;
-			index++;
+		index++;
 	}
 	while (ft_isdigit(nptr[index]))
 	{
