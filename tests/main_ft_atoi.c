@@ -33,6 +33,6 @@ int ft_atoi(const char *nptr)
 
 int main(void)
 {
-    printf("%d", ft_atoi("24"));
+    printf("%d", ft_atoi("320"));
     return(0);
 }
