@@ -33,6 +33,9 @@ SOURCE = ft_isalnum \
  ft_strnstr \
  ft_memcmp \
  ft_bzero \
+ ft_memcpy \
+ ft_memset \
+ ft_memchr \
 
 # .c and .o files
 SOURCES = $(addsuffix .c, $(SOURCE))
