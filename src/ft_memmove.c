@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: larcrist <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/02 03:03:34 by larcrist          #+#    #+#             */
-/*   Updated: 2022/10/02 03:12:34 by larcrist         ###   ########.fr       */
+/*   Created: 2022/10/06 16:18:11 by larcrist          #+#    #+#             */
+/*   Updated: 2022/10/06 16:23:28 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,19 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	source = (char *)src;
 	destiny = (char *)dest;
 	index = 0;
-	if (destiny > source)
+	if (source > destiny)
 	{
-		while (len > 0)
+		while (index < len)
 		{
-			destiny[len] = source[len];
-			len--;
+			destiny[index] = source[index];
+			index++;
 		}
 	}
 	else
 	{
-		while(index < len)
+		while (index != len)
 		{
-			destiny[index] = source[index]; //ft_memcpy(dst, src, len);
+			destiny[len - index - 1] = source[len - index - 1];
 			index++;
 		}
 	}
