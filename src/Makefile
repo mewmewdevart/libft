@@ -25,17 +25,34 @@ SOURCE = ft_isalnum \
  ft_tolower \
  ft_toupper \
  ft_strlen \
- ft_strncmp \
  ft_strlcpy \
- ft_atoi \
  ft_strlcat \
+ ft_strncmp \
  ft_strchr \
+ ft_strrchr \
  ft_strnstr \
+ ft_atoi \
  ft_memcmp \
  ft_bzero \
  ft_memcpy \
  ft_memset \
+ ft_memmove \
  ft_memchr \
+ ft_calloc \
+ ft_strdup \
+
+ #second part
+# ft_substr
+# ft_strjoin
+# ft_strtrim
+# ft_split
+# ft_strmapi
+# ft_striteri
+
+#ft_putchar_fd
+#ft_putstr_fd
+#ft_putendl_fd
+#ft_putnbr_fd
 
 # .c and .o files
 SOURCES = $(addsuffix .c, $(SOURCE))
