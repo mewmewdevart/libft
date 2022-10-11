@@ -40,6 +40,12 @@ SOURCE = ft_isalnum \
  ft_memchr \
  ft_calloc \
  ft_strdup \
+ ft_putchar_fd \
+ ft_putstr_fd \
+ ft_putendl_fd \
+ ft_putnbr_fd \
+
+
 
  #second part
 # ft_substr
@@ -49,10 +55,6 @@ SOURCE = ft_isalnum \
 # ft_strmapi
 # ft_striteri
 
-#ft_putchar_fd
-#ft_putstr_fd
-#ft_putendl_fd
-#ft_putnbr_fd
 
 # .c and .o files
 SOURCES = $(addsuffix .c, $(SOURCE))

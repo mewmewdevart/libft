@@ -8,6 +8,7 @@ src/a.out
 src/main.c
 src/main
 tests/oldsMains
+src/part02/a.out
 
 #VSCODE extensions
 .vscode/
