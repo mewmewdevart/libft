@@ -1,0 +1,11 @@
+#    |\__/,|   (`\
+#  _.|o o  |_   ) )
+#-(((---(((--------     Larcrist
+
+- Valgrind : Vazamento de memória e acesso a posições inválidas de memória (o que pode levar a segmentation fault).
+
+No Terminal execute:
+    gcc main.c -o programa 
+    valgrind --leak-check=full ./programa
+
+// https://github.com/tomasaccini/Valgreen/ Valgrind Legivel
