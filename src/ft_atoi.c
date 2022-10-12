@@ -6,7 +6,7 @@
 /*   By: larcrist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 02:33:37 by larcrist          #+#    #+#             */
-/*   Updated: 2022/09/28 02:41:30 by larcrist         ###   ########.fr       */
+/*   Updated: 2022/10/11 19:57:57 by larcrist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,8 @@ int	ft_atoi(const char *nptr)
 	}
 	while (ft_isdigit(nptr[index]))
 	{
-	result = (result * 10) + (nptr[index] - 48);
-	index++;
+		result = (result * 10) + (nptr[index] - 48);
+		index++;
 	}
 	return (symbol * result);
 }
