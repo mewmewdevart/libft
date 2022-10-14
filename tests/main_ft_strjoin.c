@@ -8,7 +8,7 @@ int main (void)
 {
 	printf("%s", ft_strjoin("larissa", "tomate"));
 }
-char	ft_strjoin(char const *s1, char const *s2)
+char		*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
 	size_t	index;

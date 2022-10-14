@@ -46,10 +46,9 @@ SOURCE = ft_isalnum \
  ft_putnbr_fd \
  ft_substr \
  ft_strjoin \
+ ft_strtrim \
 
-
- #second part
-# ft_strtrim
+#second part
 # ft_split
 # ft_strmapi
 # ft_striteri
