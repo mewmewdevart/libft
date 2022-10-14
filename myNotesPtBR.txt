@@ -9,3 +9,9 @@ No Terminal execute:
     valgrind --leak-check=full ./programa
 
 // https://github.com/tomasaccini/Valgreen/ Valgrind Legivel
+
+
+- GDB : Permite que você veja o que está acontecendo "dentro" de um programa enquanto ele é executado, ou o que o programa estava fazendo antes de falhar.
+    gcc -g file.c -o file.out
+    gdb file.out
+// https://medium.com/permalink-univesp/guia-b%C3%A1sico-de-depura%C3%A7%C3%A3o-com-gdb-ba2cacde0a6e Conceitos Basicos
