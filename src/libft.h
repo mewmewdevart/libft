@@ -42,7 +42,7 @@ char		*ft_strtrim(char const *s1, char const *set);
 
 /* -------◊		FUNCTIONS TO CONVERSION/STRINGS FOR INTEGERS	◊------- */
 int			ft_atoi(const char *nptr);
-//char *ft_itoa(int n); malloca
+char		*ft_itoa(int n);
 
 /* -------◊		FUNCTIONS TO MANIPULATE MEMORY	◊------- */
 int			ft_memcmp(const void *s1, const void *s2, size_t n);

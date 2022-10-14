@@ -47,6 +47,7 @@ SOURCE = ft_isalnum \
  ft_substr \
  ft_strjoin \
  ft_strtrim \
+ ft_itoa \
 
 #second part
 # ft_split
