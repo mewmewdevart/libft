@@ -6,7 +6,7 @@
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 23:51:56 by coder             #+#    #+#             */
-/*   Updated: 2022/10/16 23:53:27 by coder            ###   ########.fr       */
+/*   Updated: 2022/10/17 00:02:30 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	indice;
 	unsigned int	length;
-	char			str;
+	char			*str;
 
-	len = ft_strlen(s);
-	str = (char *)ft_calloc(len + 1, sizeof(char));
+	length = ft_strlen(s);
+	str = (char *)ft_calloc(length + 1, sizeof(char));
 	if (!str)
 		return (0);
 	indice = 0;
