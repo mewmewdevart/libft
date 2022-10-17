@@ -48,11 +48,9 @@ SOURCE = ft_isalnum \
  ft_strjoin \
  ft_strtrim \
  ft_itoa \
-
-#second part
-# ft_split
-# ft_strmapi
-# ft_striteri
+ ft_split \
+ ft_strmapi \
+ ft_striteri \
 
 
 # .c and .o files
