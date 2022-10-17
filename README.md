@@ -1,5 +1,9 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50052600/196072481-d6070db0-93aa-4d6a-a9c7-e014c04ec27f.png" />
+</p>
+
 <h1 align="center">
- libft [⚠️ In Development] 
+ Libft
 </h1>
 
 <p align="center">
@@ -7,10 +11,10 @@
 </p>
 
 <p align="center">
-	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/mewmewdevart/libft?color=6272a4" />
 	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/mewmewdevart/libft?color=6272a4" />
 	<img alt="Main language" src="https://img.shields.io/github/languages/top/mewmewdevart/libft?color=6272a4"/>
 	<img alt="Main language" src="https://img.shields.io/github/license/mewmewdevart/libft?color=6272a4"/>
+	<img alt="Number of lines" src="https://img.shields.io/tokei/lines/github/mewmewdevart/libft?color=6576AA"/>
 </p>
 
 ## 💡 About the project
