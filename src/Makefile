@@ -17,7 +17,7 @@ AR = ar rcs
 REMOVE = rm -rf
 
 # my functions
-SOURCE = ft_isalnum \
+SOURCE = ft_isalnum.c \
  ft_isalpha.c \
  ft_isascii.c \
  ft_isdigit.c \
