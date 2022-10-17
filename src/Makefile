@@ -6,12 +6,12 @@
 #    By: larcrist <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/14 16:58:09 by larcrist          #+#    #+#              #
-#    Updated: 2022/09/19 17:26:13 by larcrist         ###   ########.fr        #
+#    Updated: 2022/10/17 00:43:03 by larcrist         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 REMOVE = rm -rf
@@ -48,14 +48,15 @@ SOURCE = ft_isalnum \
  ft_strjoin \
  ft_strtrim \
  ft_itoa \
- ft_split \
- ft_strmapi \
- ft_striteri \
+
+#second part
+# ft_split
+# ft_strmapi
+# ft_striteri
 
 
-# .c and .o files
-SOURCES = $(addsuffix .c, $(SOURCE))
-OBJECTS = $(addsuffix .o, $(SOURCE))
+# .c files = .o files
+OBJECTS = $(SOURCE:.c=.o)
 
 # compilation and linking
 all: $(NAME)
@@ -63,11 +64,12 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	$(AR) $(NAME) $@ $^
 
-.c.o: $(SOURCES)
-	$(CC) $(CFLAGS) -c -o $@ $<
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+	$(AR) $(NAME) $@ $^
 
 clean:
-	$(REMOVE) *.o
+	$(REMOVE) $(OBJECTS)
 
 fclean: clean
 	$(REMOVE) $(NAME)
