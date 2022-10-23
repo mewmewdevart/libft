@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 NAME = libft.a
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 REMOVE = rm -rf

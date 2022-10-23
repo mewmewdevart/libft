@@ -14,4 +14,19 @@ No Terminal execute:
 - GDB : Permite que você veja o que está acontecendo "dentro" de um programa enquanto ele é executado, ou o que o programa estava fazendo antes de falhar.
     gcc -g file.c -o file.out
     gdb file.out
+
+    //Interface grafica
+        command: tui enable
+
+        p/display name(variavel) mostra o valor atual/oque tem la dentro da variavel
+        b - nameFunction/numberLine
+        s - entra na função
+        n - locomoção linha por linha
+    
+    1. b nome(function/etc) : break point
+    2. r (run)
+
+
+
+    &nomeVarial (printa endereço)
 // https://medium.com/permalink-univesp/guia-b%C3%A1sico-de-depura%C3%A7%C3%A3o-com-gdb-ba2cacde0a6e Conceitos Basicos
