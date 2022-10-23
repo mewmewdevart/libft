@@ -1,9 +1,12 @@
 <h2 align="center"> 
-The Functions
+Functions 📖 [IN DEVELOPMENT]
 </h2>
 
-### Functions from `<ctype.h>`
+<h4 align="center"> 
+  Functions for character, string and memory manipulation + plus (other functions-projects). ↓
+</h4>
 
+#### ◊	FUNCTIONS TO MANIPULATE CHARACTERS	◊
 - [`ft_isalpha`](ft_isalpha.c)	- checks  for  an  alphabetic  character.
 - [`ft_isdigit`](ft_isdigit.c)	- checks for a digit (0 through 9).
 - [`ft_isalnum`](ft_isalnum.c)	- checks for an alphanumeric character.
@@ -11,6 +14,33 @@ The Functions
 - [`ft_isprint`](ft_isprint.c)	- checks for any printable character.
 - [`ft_toupper`](ft_toupper.c)	- convert char to uppercase.
 - [`ft_tolower`](ft_tolower.c)	- convert char to lowercase.
+
+
+#### ◊	FUNCTIONS TO MANIPULATE STRINGS	◊
+- [`ft_strlen`](ft_strlen.c)	- calculate the length of a string.
+- [`ft_strlcpy`](ft_strlcpy.c)	- copy string to an specific size.
+- [`ft_strlcat`](ft_strlcat.c)	- concatenate string to an specific size.
+- [`ft_strchr`](ft_strchr.c)	- locate character in string.
+- [`ft_strrchr`](ft_strrchr.c)	- locate character in string.
+- [`ft_strncmp`](ft_strncmp.c)	- compare two strings.
+- [`ft_strnstr`](ft_strnstr.c)	- locate a substring in a string.
+- [`ft_substr`](ft_substr.c)	- returns a substring from a string.
+- [`ft_strjoin`](ft_strjoin.c)	- concatenates two strings.
+- [`ft_strtrim`](ft_strtrim.c)	- trims the beginning and end of string with specific set of chars.
+- [`ft_split`](ft_split.c)	- splits a string using a char as parameter.
+- [`ft_strmapi`](ft_strmapi.c)	- applies a function to each character of a string.
+- [`ft_striteri`](ft_striteri.c)	- applies a function to each character of a string.
+
+
+#### ◊	NON-STANDARD FUNCTIONS	◊
+- [`ft_putchar_fd`](ft_putchar_fd.c)	- output a char to a file descriptor.
+- [`ft_putstr_fd`](ft_putstr_fd.c)	- output a string to a file descriptor.
+- [`ft_putendl_fd`](ft_putendl_fd.c)	- output a string to a file descriptor, followed by a new line.
+- [`ft_putnbr_fd`](ft_putnbr_fd.c)	- output a number to a file descriptor.
+
+
+
+
 
 ### Functions from `<string.h>`
 
@@ -28,6 +58,7 @@ The Functions
 - [`ft_memcmp`](ft_memcmp.c)	- compare memory areas.
 - [`ft_strnstr`](ft_strnstr.c)	- locate a substring in a string.
 - [`ft_strdup`](ft_strdup.c)	- creates a dupplicate for the string passed as parameter.
+
 
 ### Functions from `<stdlib.h>`
 - [`ft_atoi`](ft_atoi.c)	- convert a string to an integer.
