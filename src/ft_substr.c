@@ -19,14 +19,20 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (ft_strlen(s) < start)
-    {
-		len = 0;
+	{
+		str = (char *)malloc(sizeof(*s));
+		str[0] = '\0';
+		return (str);
 	}
+	if (ft_strlen(s) < start)
+		len = 0;
 	if (ft_strlen(s + start) < len)
 		len = ft_strlen(s + start);
 	str = (char *)malloc(len + 1);
 	if (!str)
+	{
 		return (NULL);
+	}
 	ft_strlcpy(str, s + start, len + 1);
 	return (str);
 }
