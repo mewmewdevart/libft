@@ -19,7 +19,12 @@
 
 ## 💡 About the project
 
-> _Building my own basic C static library, which will be used throughout the rest of the program (42 Cursus). The ```ft_*``` functions mostly mimic the behaviour of the traditional C functions, and must be written using at most ```write()``` and ```malloc()```. 
+> _Building my own basic C static library, which will be used throughout the rest of the program (42 Cursus). The ```ft_*``` functions mostly mimic the behaviour of the traditional C functions, and must be written using at most ```write()``` and ```malloc()```.
+
+<p align="center">
+	📌 In the libft folder is the most up-to-date version of the library with functions learned in other projectsre.
+</p>
+
 
 <p align="center">
 	<a href="src/README.md">See more about this project! 🚀🌎</a> 
