@@ -36,14 +36,14 @@ The function is written in C language and thus needs the **`make`** and **`gcc` 
 
 **0. Download the archives**
 
-Download the archives and go to the library directory:
+Download the archives and go to the standard_library directory:
 
 ```bash
 # Clone the repository
 $ git clone https://github.com/mewmewdevart/libft
-
+	
 # Enter into the directory
-$ cd libft/src/
+$ cd libft/standard_libft/
 ```
 
 **1. Compiling the library**
