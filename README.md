@@ -62,11 +62,13 @@ To use the library functions in your code, simply include its header:
 #include "libft.h"
 ```
 
-And don't forget in to use the command ↓ to "connect" your main.c with the generated static library (with functions) :
+If you try to compile your .c files with cc using "cc example.c" you will get an undefined symbol error for libft functions.
 
+You have to tell the file which library it's using:  ↓
 ```shell
-$ gcc main.c -o main libft.a
+$ cc example.c libft.a -o prog_example
 ```
+That's it. Now run it using ./prog_example
 
 ## 📋 Credits
 
