@@ -6,7 +6,7 @@
 #    By: larcrist <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/14 16:58:09 by larcrist          #+#    #+#              #
-#    Updated: 2022/10/17 00:43:03 by larcrist         ###   ########.fr        #
+#    Updated: 2022/11/02 12:46:25 by larcrist         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,8 +56,20 @@ SOURCES = sources/conversions/ft_atoi.c \
 # .c files = .o files
 OBJECTS = $(SOURCES:.c=.o)
 
+# Colors
+DEF_COLOR = \033[0;39m
+GRAY = \033[0;90m
+RED = \033[0;91m
+GREEN = \033[0;92m
+YELLOW = \033[0;93m
+BLUE = \033[0;94m
+MAGENTA = \033[0;95m
+CYAN = \033[0;96m
+WHITE = \033[0;97m
+
 # compilation and linking
 all: $(NAME)
+	@echo "$(GREEN)◞( ､ᐛ)､＿/ The Makefile of libft has been compilated!$(DEF_COLOR)" 
 
 $(NAME): $(OBJECTS)
 	$(AR) $(NAME) $@ $^
@@ -68,10 +80,13 @@ $(NAME): $(OBJECTS)
 
 clean:
 	$(REMOVE) $(OBJECTS)
+	@echo "$(BLUE)Object files cleaned!$(DEF_COLOR)"
 
 fclean: clean
 	$(REMOVE) $(NAME)
+	@echo "$(BLUE)Executable files cleaned!$(DEF_COLOR)"
 
 re: fclean all
+	@echo "$(BLUE)Cleaned and rebuilt everything!$(DEF_COLOR)" 
 
 .PHONY: all clean fclean re

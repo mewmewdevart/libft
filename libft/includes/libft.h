@@ -6,7 +6,7 @@
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 02:19:27 by larcrist          #+#    #+#             */
-/*   Updated: 2022/09/14 17:29:37 by larcrist         ###   ########.fr       */
+/*   Updated: 2022/11/02 12:33:58 by larcrist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 # include <unistd.h> // write
 # include <stdlib.h> // malloc(), free() and size_t
-# include "get_next_line.h" //get_next_line()
-//# include "ft_printf.h" //ft_printf()
+
+# define BUFFER_SIZE	1024 //buffe_size of gnl
 
 /* -------◊	FUNCTIONS TO MANIPULATE CHARACTERS	◊------- */
 int			ft_isalnum(int c);
