@@ -14,7 +14,6 @@
 	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/mewmewdevart/libft?color=6272a4" />
 	<img alt="Main language" src="https://img.shields.io/github/languages/top/mewmewdevart/libft?color=6272a4"/>
 	<img alt="Main language" src="https://img.shields.io/github/license/mewmewdevart/libft?color=6272a4"/>
-	<img alt="Number of lines" src="https://img.shields.io/tokei/lines/github/mewmewdevart/libft?color=6576AA"/>
 </p>
 
 ## 💡 About the project
