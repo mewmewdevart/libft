@@ -26,7 +26,7 @@
 
 
 <p align="center">
-	<a href="src/README.md">See more about this project! 🚀🌎</a> 
+	<a href="libft">See my custom-made library (up up version)🚀🌎</a> 
 </p>
 
 ## 🛠️ Usage
