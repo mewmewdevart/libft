@@ -1,25 +1,65 @@
+## List of functions:
 
-#### Functions to manipulate characters ◊
-- [`int			ft_isalpha(int c)`](sources/manipulate_characters/ft_isalpha.c)	- Checks for an alphabetic character
-- [`int			ft_isdigit(int c)`](sources/manipulate_characters/ft_isdigit.c)	- Checks for a digit (0 - 9)
-- [`int			ft_isalnum(int c)`](sources/manipulate_characters/ft_isalnum.c)	- Checks for an alphanumeric character
-- [`int			ft_isascii(int c)`](sources/manipulate_characters/ft_isascii.c)	- Checks whether c is a 7-bit unsigned char value that fits into the ASCII character set
-- [`int			ft_isprint(int c)`](sources/manipulate_characters/ft_isprint.c)	- Checks for any printable character including space
-- [`int			ft_tolower(int c)`](sources/manipulate_characters/ft_toupper.c)	- Convert uppercase letters to lowercase
-- [`int			ft_toupper(int c)`](sources/manipulate_characters/ft_tolower.c)	- Convert lowercase letters to uppercase
+### 📁 Files/sources
+#### Manipulate_Characters/
+* [`ft_isascii`](sources/manipulate_characters/ft_isascii.c)			- test for ASCII character.
+* [`ft_isalnum`](sources/manipulate_characters/ft_isalnum.c)			- alphanumeric character test.
+* [`ft_isalpha`](sources/manipulate_characters/ft_isalpha.c)			- alphabetic character test.
+* [`ft_isdigit`](sources/manipulate_characters/ft_isdigit.c)			- decimal-digit character test.
+* [`ft_isprint`](sources/manipulate_characters/ft_isprint.c)			- printing character test (space character inclusive).
+* [`ft_tolower`](sources/manipulate_characters/ft_tolower.c)			- upper case to lower case letter conversion.
+* [`ft_toupper`](sources/manipulate_characters/ft_toupper.c)			- lower case to upper case letter conversion.
+
+#### Conversions/
+* [`ft_atoi`](sources/conversions/ft_atoi.c)		- convert ASCII string to integer.
+* [`ft_itoa`](sources/conversions/ft_itoa.c)					- convert integer to ASCII string.
+
+#### Manipulate_memory/
+* [`ft_bzero`](sources/manipulate_memory/ft_bzero.c)		- write zeroes to a byte string.
+* [`ft_memset`](sources/manipulate_memory/ft_memset.c)		- write a byte to a byte string.
+* [`ft_memchr`](sources/manipulate_memory/ft_memchr.c)		- locate byte in byte string.
+* [`ft_memcmp`](sources/manipulate_memory/ft_memcmp.c)		- compare byte string.
+* [`ft_memmove`](sources/manipulate_memory/ft_memmove.c)	- copy byte string.
+* [`ft_memcpy`](sources/manipulate_memory/ft_memcpy.c)		- copy memory area.
+* [`ft_calloc`](sources/manipulate_memory/ft_calloc.c)	- memory allocation.
+* [`ft_strdup`](sources/manipulate_memory/ft_strdup.c)  - save a copy of a string (with malloc).
 
 
-#### Functions to manipulate strings ◊
-- [`size_t	ft_strlen(const char *s)`](sources/manipulate_strings/ft_strlen.c)	- Find length of string
-- [`size_t		ft_strlcpy(char *dst, const char *src, size_t size)`](sources/manipulate_strings/ft_strlcpy.c)	- Size-bounded string copying
-- [`size_t		ft_strlcat(char *dst, const char *src, size_t size)`](sources/manipulate_strings/ft_strlcat.c)	- Size-bounded string concatenation
-- [`char		*ft_strchr(const char *s, int c)`](sources/manipulate_strings/ft_strchr.c)	- Locate character in string (first occurrence)
-- [`char		*ft_strrchr(const char *s, int c)`](sources/manipulate_strings/ft_strrchr.c)	-  Locate character in string (last occurence)
-- [`int			ft_strncmp(const char *s1, const char *s2, size_t n)`](sources/manipulate_strings/ft_strncmp.c)	- Compare strings (size-bounded)
-- [`char		*ft_strnstr(const char *big, const char *little, size_t len)`](sources/manipulate_strings/ft_strnstr.c)	- Locate a substring in a string (size-bounded)
-- [`char		*ft_substr(char const *s, unsigned int start, size_t len)`](sources/manipulate_strings/ft_substr.c)	- Find substring of a string
-- [`char		*ft_strjoin(char const *s1, char const *s2)`](sources/manipulate_strings/ft_strjoin.c)	- concatenate two strings into a new string (with malloc)
-- [`char		*ft_strtrim(char const *s1, char const *set)`](sources/manipulate_strings/ft_strtrim.c)	- Trim beginning and end of string with the specified characters
-- [`char		**ft_split(char const *str, char c)`](sources/manipulate_strings/ft_split.c)	- Split string, with specified character as delimiter, into an array of strings
-- [`char		*ft_strmapi(char const *s, char (*f)(unsigned int, char))`](sources/manipulate_strings/ft_strmapi.c)	-  Create new string from modifying string with specified function
-- [`void		ft_striteri(char *s, void (*f)(unsigned int, char*))`](sources/manipulate_strings/ft_striteri.c)	- Applies the function f to each character of the string s to create a new string
+#### Manipulate_strings/
+* [`ft_strlen`](sources/manipulate_strings/ft_strlen.c)				- find length of string.
+* [`ft_strchr`](sources/manipulate_strings/ft_strchr.c)				- locate character in string (first occurrence).
+* [`ft_strrchr`](sources/manipulate_strings/ft_strrchr.c)			- locate character in string (last occurence).
+* [`ft_strnstr`](sources/manipulate_strings/ft_strnstr.c)			- locate a substring in a string (size-bounded).
+* [`ft_strncmp`](sources/manipulate_strings/ft_strncmp.c) 			- compare strings (size-bounded).
+* [`ft_strlcpy`](sources/manipulate_strings/ft_strlcpy.c)			- size-bounded string copying.
+* [`ft_strlcat`](sources/manipulate_strings/ft_strlcat.c)			- size-bounded string concatenation.
+* [`ft_substr`](sources/manipulate_strings/ft_substr.c)				- extract substring from string.
+* [`ft_strtrim`](sources/manipulate_strings/ft_strtrim.c)			- trim beginning and end of string with the specified characters.
+* [`ft_strjoin`](ssources/manipulate_strings/ft_strjoin.c)			- concatenate two strings into a new string (with malloc).
+* [`ft_split`](sources/manipulate_strings/ft_split.c)				- split string, with specified character as delimiter, into an array of strings.
+* [`ft_strmapi`](sources/manipulate_strings/ft_strmapi.c)			- create new string from modifying string with specified function.
+* [`ft_striteri`](sources/manipulate_strings/ft_striteri.c)			- 
+
+#### File_Descriptor/
+* [`ft_putchar_fd`](sources/file_descriptor/ft_putchar_fd.c)		- output a character to given file.
+* [`ft_putstr_fd`](sources/file_descriptor/ft_putstr_fd.c)		- output string to given file.
+* [`ft_putendl_fd`](sources/file_descriptor/ft_putendl_fd.c)		- output string to given file with newline.
+* [`ft_putnbr_fd`](sources/file_descriptor/ft_putnbr_fd.c)		- output integer to given file.
+
+
+//soon
+int			ft_putstr(char *str);
+int			ft_putptr(unsigned long int ptr);
+int			ft_puthex(unsigned int number, int flag);
+
+char		*get_next_line(int fd);
+
+/* -------◊	PRINTF	◊------- */
+int			ft_printf(const char *str, ...);
+
+* [`ft_swap`](libft/srcs/mem/ft_swap.c) *			- swap value of two integers.
+* [`ft_putchar`](libft/srcs/put/ft_putchar.c) *	- output a character to stdout.
+* [`ft_putchar_fd`](libft/srcs/put/ft_putchar_fd.c)		- output a character to given file.
+* [`ft_putstr`](libft/srcs/put/ft_putstr.c) *		- output string to stdout.
+* [`ft_putstr_fd`](libft/srcs/put/ft_putstr_fd.c)		- output string to given file.
+* [`ft_ftoa_rnd`](libft/srcs/str/ft_ftoa_rnd.c)			- convert float to ASCII string.
