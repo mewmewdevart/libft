@@ -6,7 +6,7 @@
 #    By: larcrist <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/14 16:58:09 by larcrist          #+#    #+#              #
-#    Updated: 2022/11/02 12:46:25 by larcrist         ###   ########.fr        #
+#    Updated: 2022/11/09 00:07:59 by larcrist         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,8 @@ SOURCES = sources/conversions/ft_atoi.c \
 	sources/manipulate_characters/ft_isprint.c \
 	sources/manipulate_characters/ft_tolower.c \
 	sources/manipulate_characters/ft_toupper.c \
+	sources/manipulate_characters/ft_putchar.c \
+	sources/manipulate_characters/ft_putnbr.c \
 	sources/manipulate_memory/ft_bzero.c \
 	sources/manipulate_memory/ft_calloc.c \
 	sources/manipulate_memory/ft_memchr.c \
@@ -51,7 +53,11 @@ SOURCES = sources/conversions/ft_atoi.c \
 	sources/manipulate_strings/ft_strrchr.c \
 	sources/manipulate_strings/ft_strtrim.c \
 	sources/manipulate_strings/ft_substr.c \
+	sources/manipulate_strings/ft_putstr.c \
+	sources/manipulate_strings/ft_putptr.c \
+	sources/manipulate_strings/ft_puthex.c \
 	sources/get_next_line/get_next_line.c \
+	sources/ft_printf/ft_printf.c \
 
 # .c files = .o files
 OBJECTS = $(SOURCES:.c=.o)
@@ -69,24 +75,23 @@ WHITE = \033[0;97m
 
 # compilation and linking
 all: $(NAME)
-	@echo "$(GREEN)◞( ､ᐛ)､＿/ The Makefile of libft has been compilated!$(DEF_COLOR)" 
+	@echo "$(GREEN)◞( ､ᐛ)､＿/ The Makefile of [LIBFT] has been compiled!$(DEF_COLOR)"
 
 $(NAME): $(OBJECTS)
-	$(AR) $(NAME) $@ $^
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-	$(AR) $(NAME) $@ $^
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@$(AR) $(NAME) $@
 
 clean:
-	$(REMOVE) $(OBJECTS)
-	@echo "$(BLUE)Object files cleaned!$(DEF_COLOR)"
+	@$(REMOVE) $(OBJECTS)
+	@echo "$(BLUE) [LIBFT] Object files cleaned!$(DEF_COLOR)"
 
 fclean: clean
-	$(REMOVE) $(NAME)
-	@echo "$(BLUE)Executable files cleaned!$(DEF_COLOR)"
+	@$(REMOVE) $(NAME)
+	@echo "$(BLUE) [LIBFT] Executable files cleaned!$(DEF_COLOR)"
 
 re: fclean all
-	@echo "$(BLUE)Cleaned and rebuilt everything!$(DEF_COLOR)" 
+	@echo "$(BLUE) [LIBFT] Cleaned and rebuilt everything!$(DEF_COLOR)"
 
 .PHONY: all clean fclean re
