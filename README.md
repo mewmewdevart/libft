@@ -33,7 +33,7 @@
 
 ### Requirements
 
-The function is written in C language and thus needs the **`make`** and **`gcc` compiler** and some standard **C libraries** to run. <br>
+This project requires [GNU Compiler Collection](https://gcc.gnu.org/) and [GNU Make](https://www.gnu.org/software/make/) compiler. <br>
 ❗️| Make sure you have all the required tools installed on your local machine then continue with these steps.
 
 ### Instructions
