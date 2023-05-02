@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-	<b><i>My first library in C : a collection of functions that will be a useful tool for 42 Cursus.</i></b><br>
+	<b><i>My first library in C : a collection of functions that will be useful tools for 42 Cursus.</i></b><br>
 </p>
 
 <p align="center">
@@ -18,15 +18,15 @@
 
 ## 💡 About the project
 
-> _Building my own basic C static library, which will be used throughout the rest of the program (42 Cursus). The ```ft_*``` functions mostly mimic the behaviour of the traditional C functions, and must be written using at most ```write()``` and ```malloc()```.
+> _Building my own basic C static library, which will be used throughout the rest of the program (42 Cursus). The ```ft_*``` functions mostly mimic the behavior of the traditional C functions, and must be written using at most ```write()``` and ```malloc()```.
 
 <p align="center">
-	📌 In the libft folder is the most up-to-date version of the library with functions learned in others projects.
+	📌 In the premium libft folder is the most up-to-date version of the library with functions learned in others projects.
 </p>
 
 
 <p align="center">
-	<a href="libft">See my custom-made library (up up version)🚀🌎</a> 
+	<a href="premium_libft">See my custom-made library (up up version)🚀🌎</a> 
 </p>
 
 ## 🛠️ Usage
@@ -52,7 +52,7 @@ $ cd libft/standard_libft/
 
 **1. Compiling the library**
 
-Run the command in your terminal :
+Run this command in your terminal :
 
 ```shell
 $ make
@@ -66,13 +66,14 @@ To use the library functions in your code, simply include its header:
 #include "libft.h"
 ```
 
-If you try to compile your .c files with cc using "cc example.c" you will get an undefined symbol error for libft functions.
-
+If you try to compile your .c files with cc using "cc example.c", you will get an undefined symbol error for libft functions.
 You have to tell the file which library it's using:  ↓
+
 ```shell
 $ cc example.c libft.a -o prog_example
 ```
-That's it. Now run it using ./prog_example
+
+That's it. Now you can run it using ./prog_example .
 
 ## 📋 Credits
 
